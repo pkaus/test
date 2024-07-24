@@ -4,6 +4,17 @@
   become: true
 
   tasks:
-  - name: install "pkg"
+  - name: install packages
     package:
-      name: "name"
+      name:
+        - htop
+        - tmux
+
+- name: copy wallpaper file
+  copy:
+    src: files/file.png
+    dest: /usr/share/
+    owner: root
+    group: root
+
+- name: set wallpaper
