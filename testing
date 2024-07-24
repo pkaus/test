@@ -1,1 +1,9 @@
-words
+---
+- hosts: localhost
+  connection: localhost
+  become: true
+
+  tasks:
+  - name: install "pkg"
+    package:
+      name: "name"
