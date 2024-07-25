@@ -1,1 +1,7 @@
-
+- name:
+  copy:
+    src:files/sudoers_ansible
+    dest: /etc/sudoers.d/ansible
+    owner: root
+    group: root
+    mode: 0440
