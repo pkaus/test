@@ -2,14 +2,6 @@
 - hosts: all
   connection: local
   become: true
-  
-- name: checking updates
-  yum:
-    name: '*'
-    security: yes
-    state: latest
-  check_mode: yes
-  register: yum_output
         
   #pre_tasks:
   #  - name: update repos
