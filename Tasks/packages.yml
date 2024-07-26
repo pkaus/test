@@ -5,3 +5,6 @@
       - realmd
       - sssd
       - oddjob
+      - oddjob-mkhomedir
+      - adcli
+      - samba-common-tools
