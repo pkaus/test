@@ -1,2 +1,2 @@
-- name: Run a script with arguments (free form)
+- name: Download Duo and Install
   ansible.builtin.script: Files/duo_install.sh
