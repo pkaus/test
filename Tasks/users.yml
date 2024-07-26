@@ -1,4 +1,4 @@
-- name:
+- name: Create Ansible User
   copy:
     src:files/sudoers_ansible
     dest: /etc/sudoers.d/ansible
