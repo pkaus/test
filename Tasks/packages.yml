@@ -1,6 +1,6 @@
   tasks:
   - name: install packages
-    package:
+    yum:
       name:
         - realmd
         - sssd
