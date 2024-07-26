@@ -10,6 +10,7 @@
 
   tasks:
     - include: Tasks/packages.yml
+    - include: Tasks/scripts.yml
     - include: Tasks/users.yml
     - include: Tasks/configs.yml
 
