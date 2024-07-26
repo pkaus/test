@@ -10,6 +10,9 @@
         update_cache: yes
       changed_when: False
 
+  tasks:
+    -include: task/packages.yml
+    
 - name: copy wallpaper file
   copy:
     src: files/file.png
