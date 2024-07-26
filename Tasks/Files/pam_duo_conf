@@ -1,0 +1,14 @@
+[duo]
+; Duo integration key
+ikey = DI27T84HRQ6O9OXLK8S6
+; Duo secret key
+skey = yyZeIALcpgasNXEWugFRUwD9OR0EUILBFy40dhEqAPI
+; Duo API host
+host = api-ad83bfe7.duosecurity.com
+; `failmode = safe` In the event of errors with this configuration file or connection to the Duo service
+; this mode will allow login without 2FA.
+; `failmode = secure` This mode will deny access in the above cases. Misconfigurations with this setting
+; enabled may result in you being locked out of your system.
+failmode = safe
+; Send command for Duo Push authentication
+;pushinfo = yes
