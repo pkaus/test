@@ -1,11 +1,7 @@
-- hosts: localhost
-  connection: local
-  become: true
-  
-  tasks:
-  - name: install packages
-    yum:
-      name:
-        - realmd
-        - sssd
-        - oddjob
+- name: Install packages
+  yum:
+    name:
+      - nano
+      - realmd
+      - sssd
+      - oddjob
