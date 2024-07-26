@@ -15,7 +15,7 @@
     
 - name: copy SSSD file
   copy:
-    src: files/sssd_conf
+    src: Files/sssd_conf
     dest: /etc/sssd/sssd.conf
     owner: root
     group: root
