@@ -2,22 +2,13 @@
 - hosts: all
   connection: local
   become: true
-        
-  #pre_tasks:
-  #  - name: update repos
-   #   yum:
- #     name:
-  #      update_cache: yes
-  #    changed_when: False
 
   tasks:
-    -include: Tasks/packages.yml
-    
-- name: copy SSSD file
-  copy:
-    src: Files/sssd_conf
-    dest: /etc/sssd/sssd.conf
-    owner: root
-    group: root
+  - name: Install Packages
+    yum:
+      name:
+        - nano
+        - realmd
+        - sssd
 
 
