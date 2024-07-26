@@ -1,14 +1,13 @@
----
 - hosts: localhost
   connection: local
   become: true
 
-  tasks:
-  - name: Install Packages
-    yum:
-      name:
-        - nano
-        - realmd
-        - sssd
+  pre_tasks:
+    - name: update repositories
+      yum:
+        update_cache: yes
+      changed_when: False
 
+  tasks:
+    - include: tasks/packages.yml
 
