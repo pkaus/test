@@ -2,13 +2,21 @@
 - hosts: all
   connection: local
   become: true
-
-  pre_tasks:
-    - name: update repos
-      yum:
+  
+  tasks:
+  - name: install packages
+    package:
       name:
-        update_cache: yes
-      changed_when: False
+        - htop
+        - tmux
+        - vim-nox
+        
+  #pre_tasks:
+  #  - name: update repos
+   #   yum:
+ #     name:
+  #      update_cache: yes
+  #    changed_when: False
 
   tasks:
     -include: task/packages.yml
