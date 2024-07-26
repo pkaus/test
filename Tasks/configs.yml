@@ -25,7 +25,7 @@
 - name: copy pam_duo_config
   copy:
     src: Files/pam_duo_conf
-    dest: /etc/pam_duo.conf
+    dest: /etc/duo/pam_duo.conf
     owner: root
     group: root
     mode: 0440
