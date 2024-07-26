@@ -1,0 +1,19 @@
+- name: "MEDIUM | RHEL-07-010070 | PATCH | The Red Hat Enterprise Linux operating system must initiate a screensaver after a 15-minute period of inactivity for graphical user interfaces."
+  ansible.builtin.copy:
+      dest: /etc/dconf/db/local.d/00-screensaver_rhel_07_010070
+      content: |
+          [org/gnome/desktop/session]
+          idle-delay=uint32 900
+      mode: '0644'
+  notify: dconf update
+  when:
+      - rhel7stig_dconf_available
+      - rhel_07_010070
+  tags:
+      - RHEL-07-010070
+      - CAT2
+      - CCI-000057
+      - SRG-OS-000029-GPOS-00010
+      - SV-204398r880770_rule
+      - V-204398
+      - dconf
