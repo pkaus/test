@@ -11,5 +11,5 @@
   tasks:
     - include: Tasks/packages.yml
     - include: Tasks/users.yml
-    - include: Task/configs.yml
+    - include: Tasks/configs.yml
 
