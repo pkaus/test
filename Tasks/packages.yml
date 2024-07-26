@@ -9,3 +9,10 @@
       - adcli
       - samba-common-tools
       - clamav
+      - wget
+      - openssl-devel
+      - pam-devel
+      - gcc
+      - make
+      - bzip2
+      - selinux-policy-devel
