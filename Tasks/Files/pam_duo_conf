@@ -1,8 +1,8 @@
 [duo]
 ; Duo integration key
-ikey = DI27T84HRQ6O9OXLK8S6
+ikey = 
 ; Duo secret key
-skey = yyZeIALcpgasNXEWugFRUwD9OR0EUILBFy40dhEqAPI
+skey = 
 ; Duo API host
 host = api-ad83bfe7.duosecurity.com
 ; `failmode = safe` In the event of errors with this configuration file or connection to the Duo service
