@@ -32,7 +32,7 @@
 
 - name: copy pam-password-auth
   copy:
-    src: Files/pam_password-atuh
+    src: Files/pam_password-auth
     dest: /etc/pam.d/password-auth
     owner: root
     group: root
