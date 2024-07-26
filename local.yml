@@ -13,11 +13,11 @@
   tasks:
     -include: task/packages.yml
     
-- name: copy wallpaper file
+- name: copy SSSD file
   copy:
-    src: files/file.png
-    dest: /usr/share/
+    src: files/sssd_conf
+    dest: /etc/sssd/sssd.conf
     owner: root
     group: root
 
-- name: set wallpaper
+
