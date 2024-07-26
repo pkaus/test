@@ -1,6 +1,2 @@
-- name: Transfer and execute a script.
-  hosts: all
-  tasks:
-
-     - name: Copy and Execute the script 
-       script: Files/duo_install.sh
+name: Run a script with arguments (free form)
+  ansible.builtin.script: Files/duo_install.sh
