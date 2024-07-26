@@ -1,14 +1,14 @@
 ---
 - hosts: localhost
-  connection: localhost
+  connection: local
   become: true
 
-  tasks:
-  - name: install packages
-    package:
+  pre_tasks:
+    - name: update repos
+      yum:
       name:
-        - htop
-        - tmux
+        update_cache: yes
+      changed_when: False
 
 - name: copy wallpaper file
   copy:
