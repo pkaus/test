@@ -8,3 +8,4 @@
       - oddjob-mkhomedir
       - adcli
       - samba-common-tools
+      - clamav
