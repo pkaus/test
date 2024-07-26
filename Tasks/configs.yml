@@ -1,1 +1,7 @@
-
+- name: copy sssd_config
+  copy:
+    src: Files/sssd_conf
+    dest: /etc/sssd/sssd.conf
+    owner: root
+    group: root
+    mode: 0440
