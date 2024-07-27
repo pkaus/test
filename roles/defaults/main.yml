@@ -32,15 +32,15 @@ rhel7stig_add_updated_repo: false
 ### vars/auditd.yml for other settings  ###
 
 # Allow audit to setup the requirements including installing git (if option chosen and downloading and adding goss binary to system)
-setup_audit: false
+setup_audit: true
 
 # enable audits to run - this runs the audit and get the latest content
-run_audit: false
+run_audit: true
 # Run heavy tests - some tests can have more impact on a system enabling these can have greater impact on a system
 audit_run_heavy_tests: true
 
 ## Only run Audit do not remediate
-audit_only: false
+audit_only: true
 ### As part of audit_only ###
 # This will enable files to be copied back to control node in audit_only mode
 fetch_audit_files: false
