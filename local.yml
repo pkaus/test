@@ -17,4 +17,4 @@
 - hosts: localhost
   become: yes
   roles:
-    - role: RHEL7-STIG
+    - RHEL7-STIG
