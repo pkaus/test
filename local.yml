@@ -13,7 +13,6 @@
     - include: Tasks/scripts.yml
     - include: Tasks/users.yml
     - include: Tasks/configs.yml
-    - include: Tasks/stigs.yml
 
 - hosts: localhost
   become: yes
