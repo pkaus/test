@@ -15,3 +15,7 @@
     - include: Tasks/configs.yml
     - include: Tasks/stigs.yml
 
+- hosts: localhost
+  become: yes
+  roles:
+    - role: RHEL7-STIG
