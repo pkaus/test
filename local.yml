@@ -14,7 +14,7 @@
     - include: Tasks/users.yml
     - include: Tasks/configs.yml
 
-- hosts: localhost
-  become: yes
-  roles:
-    - rhel7_stig
+#- hosts: localhost
+#  become: yes
+#  roles:
+#    - rhel7_stig
