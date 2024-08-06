@@ -4,7 +4,7 @@
     dest: /etc/sssd/sssd.conf
     owner: root
     group: root
-    mode: 0440
+    mode: 0600
 
 - name: copy Chrony
   copy:
@@ -12,7 +12,7 @@
     dest: /etc/chrony.conf
     owner: root
     group: root
-    mode: 0440
+    mode: 0600
 
 - name: copy smb_config
   copy:
@@ -20,7 +20,7 @@
     dest: /etc/samba/smb.conf
     owner: root
     group: root
-    mode: 0440
+    mode: 0600
 
 - name: copy pam_duo_config
   copy:
@@ -28,7 +28,7 @@
     dest: /etc/duo/pam_duo.conf
     owner: root
     group: root
-    mode: 0440
+    mode: 0600
 
 - name: copy pam-password-auth
   copy:
@@ -36,7 +36,7 @@
     dest: /etc/pam.d/password-auth
     owner: root
     group: root
-    mode: 0440
+    mode: 0600
 
 - name: copy sshd config
   copy:
@@ -44,4 +44,4 @@
     dest: /etc/ssh/sshd_config
     owner: root
     group: root
-    mode: 0440
+    mode: 0600
